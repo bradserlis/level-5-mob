@@ -38,13 +38,15 @@ const LayoutContainer = (props) => {
         </Menu>
       </Sider>
       <Layout>
-        <Header style={{ background: '#fff', padding: 0 }} />
+        <Header style={{ background: '#fff', padding: 0, textAlign:'center' }}>
+        <h2> Level 5 Mob??? </h2>
+        </Header>
         <Content style={{ margin: '24px 16px 0' }}>
           <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
-            {props.children}
+            { props.children }
           </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+        <Footer style={{ textAlign: 'center' }}>Level 5 Mob</Footer>
       </Layout>
     </Layout>
   );

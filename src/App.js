@@ -1,14 +1,17 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter } from 'react-router-dom';
 
-import Home from './containers/Home';
+import './App.css';
 import LayoutContainer from './containers/Layout';
+import Router from './routes';
 
 const App = () => {
   return (
-    <div className="App">
-    <LayoutContainer {...this.props} />
-    </div>
+    <BrowserRouter>
+      <LayoutContainer>
+        <Router />
+      </LayoutContainer>
+    </BrowserRouter>
   )
 }
 
