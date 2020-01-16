@@ -72,19 +72,6 @@ const Home = () => {
     )
 }
 
-        // <button
-        // onClick={retrieveCharacter}
-        // value='Athrun+Lhant'
-        // type='button'>
-        // Retrieve Athrun
-        // </button>
 
 export default Home;
 
-            // <ul>
-            //   {characters.Mounts.forEach((mount)=>{
-            //     return(
-            //       <Mount mounts={mount} />
-            //     )
-            //   })}
-            // </ul>
