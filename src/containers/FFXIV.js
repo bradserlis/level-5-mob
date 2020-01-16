@@ -15,10 +15,12 @@ const FFXIV = () => {
   // }
 
   const retrieveCharacterDetails = (id) => {
+    setCharacter([]);
+    setMountList([]);
     axios.get(`https://xivapi.com/character/${id.target.value}?data=MIMO`)
     .then((res)=>{
       console.log(res.data);
-      setCharacter(...characters, res.data);
+      setCharacter(res.data);
       let mappedMountList = res.data.Mounts.map((mount)=>{
         return (
           <li
@@ -28,7 +30,7 @@ const FFXIV = () => {
           </li>
         ) 
       })
-      setMountList(...mountList, mappedMountList);
+      setMountList(mappedMountList);
     })
   }
 
