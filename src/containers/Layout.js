@@ -27,14 +27,6 @@ const LayoutContainer = (props) => {
             <Link to='/' />
           </Menu.Item>
           <Menu.Item key="2">
-            <Icon type="right-circle" theme='twoTone' />
-            <span className="nav-text">nav 2</span>
-          </Menu.Item>
-          <Menu.Item key="3">
-            <Icon type="right-circle" theme='twoTone' />
-            <span className="nav-text">nav 3</span>
-          </Menu.Item>
-          <Menu.Item key="4">
             <Icon type="right-circle" theme="twoTone" />
             <span className='nav-text'>FFXIV</span>
             <Link to='/ffxiv' />
