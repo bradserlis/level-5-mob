@@ -23,10 +23,15 @@ const LayoutContainer = (props) => {
         <Menu theme="light" mode="inline" defaultSelectedKeys={['4']}>
           <Menu.Item key="1">
             <Icon type="home" theme="twoTone" />
-            <span className="nav-text">nav 1</span>
+            <span className="nav-text">Home</span>
             <Link to='/' />
           </Menu.Item>
           <Menu.Item key="2">
+            <Icon type="right-circle" theme="twoTone" />
+            <span className="nav-text">Contacts</span>
+            <Link to='/contacts' />
+          </Menu.Item>
+          <Menu.Item key="3">
             <Icon type="right-circle" theme="twoTone" />
             <span className='nav-text'>FFXIV</span>
             <Link to='/ffxiv' />
